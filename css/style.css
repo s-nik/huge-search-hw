@@ -73,13 +73,15 @@ form {
 
 .button {
 	display: inline-block;
-	background-image: url('../img/magnifier.svg');
+	background-image: url('../img/magnifier.png');
 	background-color: transparent;
 	background-repeat: no-repeat;
 	border:none;
 	width: 7%;
 	outline: none;
 	margin: 20px;
+	/* height: 7vh; */
+	background-size: contain;
 }
 
 .search {
@@ -112,10 +114,6 @@ form {
 .container {
 	list-style: none;
 	padding: 0;
-}
-
-.column + .column {
-	margin-left: 4%;
 }
 
 h2 {
@@ -168,9 +166,13 @@ span {
 	display: inline-block;
 	word-wrap: break-word;
 	white-space: pre-wrap;
-	text-overflow: ellipsis;
+	overflow: hidden;
 	width: 70%;
 	vertical-align: middle;
+	/* max-height: 3.6em;
+	line-height: 1.8em; */
+	line-height: 12px;
+	max-height: 24px;
 }
 
 .column:last-of-type span {
