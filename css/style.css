@@ -80,8 +80,13 @@ form {
 	width: 7%;
 	outline: none;
 	margin: 20px;
-	/* height: 7vh; */
 	background-size: contain;
+	opacity: .2;
+}
+
+.button:hover {
+	margin: 10px;
+	width: 8%;
 }
 
 .search {
