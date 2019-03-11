@@ -9,10 +9,14 @@ body {
 	background-color: #f1f1f1;
 }
 
-header {
-	margin: 2% 10%;
+.wrap {
+	margin: 0 auto;
 	width: 80%;
+}
+
+header {
 	min-height: 15%;
+	margin: 30px auto;
 }
 
 form {
@@ -21,6 +25,15 @@ form {
 	height: 100%;
 	min-width: 480px;
 	min-width: 620px;
+}
+
+main {
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	justify-content: space-between;
 }
 
 .search::-webkit-input-placeholder {
@@ -85,6 +98,7 @@ form {
 }
 
 .button:hover {
+	transition: all .3s linear;
 	margin: 10px;
 	width: 8%;
 }
@@ -101,19 +115,10 @@ form {
 	font-weight: bold;
 }
 
-.section {
-	display: -webkit-flex;
-	display: -moz-flex;
-	display: -ms-flex;
-	display: -o-flex;
-	display: flex;
-	margin: 0% 10%;
-	justify-content: space-between;
-	width: 80%;
-}
 .column {
 	flex-shrink: 1;
 	width: 30%;
+	margin: 0;
 }
 
 .container {
@@ -174,8 +179,6 @@ span {
 	overflow: hidden;
 	width: 70%;
 	vertical-align: middle;
-	/* max-height: 3.6em;
-	line-height: 1.8em; */
 	line-height: 12px;
 	max-height: 24px;
 }
